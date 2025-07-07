@@ -1,0 +1,52 @@
+# --- General ---
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Node (por si usas npm para frontend) ---
+node_modules/
+dist/
+build/
+
+# --- Docker ---
+# Ignora archivos generados por Docker
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+docker-compose*.env
+.env
+.env.*
+.docker/
+docker-data/
+**/docker-volume/
+**/.dockerignore
+
+# Imágenes construidas, contenedores, volúmenes, etc.
+**/tmp/
+**/cache/
+
+# --- Nginx ---
+# Logs y archivos temporales
+logs/
+*.log
+nginx/logs/
+nginx/cache/
+nginx/temp/
+nginx/.htpasswd
+
+# --- HTML (si es solo estático, no suele ignorarse) ---
+# Ignorar archivos de desarrollo (si aplican)
+*.bak
+*.old
+*.orig
+*.swp
+
+# --- Visual Studio Code ---
+.vscode/
+
+# --- Otros entornos ---
+.idea/
+*.iml
